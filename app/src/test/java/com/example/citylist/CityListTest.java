@@ -27,6 +27,9 @@ public class CityListTest {
         assertTrue(cityList.getCities().contains(city));
     }
 
+    /**
+     * This method is for test delet
+     */
     @Test
     public void testDelet(){
         CityList cityList = new CityList();
@@ -53,6 +56,9 @@ public class CityListTest {
         });
     }
 
+    /**
+     * This method is for test delet Exception
+     */
     @Test
     public void testDeletException(){
         CityList cityList = new CityList();
@@ -68,6 +74,10 @@ public class CityListTest {
             cityList.delete(city);
         });
     }
+
+    /**
+     * This method is for test Count exception
+     */
     @Test
     public void testCountException(){
         CityList cityList = new CityList();
@@ -97,6 +107,10 @@ public class CityListTest {
         assertEquals(0, city.compareTo(cityList.getCities().get(0)));
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(1)));
     }
+
+    /**
+     * This method is for test sort city list according to provience name
+     */
     @Test
     public void testGetProvienceCities() {
         CityList cityList = new CityList();
